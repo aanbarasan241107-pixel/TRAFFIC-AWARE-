@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: traffic-aware-pathfinding
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn python:app
